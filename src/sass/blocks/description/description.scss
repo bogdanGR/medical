@@ -1,0 +1,22 @@
+.description {
+  &__text {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__wrapper {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-left: 80px;
+
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__title {
+    display: block;
+    margin-bottom: 5px;
+    color: #f82649;
+  }
+}

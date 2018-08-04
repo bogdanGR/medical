@@ -1,0 +1,32 @@
+.disciplines {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-bottom: 20px;
+
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    color: $grey-text;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #585868;
+  }
+  &__num {
+    font-size: 32px;
+    line-height: 38px;
+    color: #4f87fb;
+  }
+  &__date {
+    background-color: #4f87fb;
+    padding: 10px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    color: $white;
+  }
+}

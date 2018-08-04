@@ -1,0 +1,99 @@
+.schedule {
+  margin-bottom: 50px;
+  background-color: #f4f4f4;
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    color: $grey-text;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    margin-left: 13px;
+    width: 280px;
+    text-align: center;
+    background: #fafafa;
+    box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.75);
+
+    &--last {
+      opacity: 0.2;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__time {
+    position: relative;
+    color: $bg-date;
+
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   top: 0;
+    //   left: 0;
+    //
+    //   width: 24px;
+    //   height: 24px;
+    //   background-image: url("../../../img/time.png");
+    //
+    // }
+  }
+  &__name {
+    color: $active-color;
+  }
+  &__descr {
+    color: $grey-text;
+    padding: 0 5px;
+  }
+  &__img {
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  &__link {
+    box-sizing: border-box;
+    padding: 10px 10px;
+    padding-left: 55px;
+    margin-bottom: 45px;
+    width: 340px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: $white;
+    background: $active-color;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .schedule {
+      &__item {
+        flex-direction: row;
+        width: 650px;
+      }
+      &__inner-wrapp {
+        display: flex;
+        flex-direction: column;
+      }
+      &__time {
+        margin-left: 25px;
+        padding-top: 20px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          right: 10px;
+          height: 100px;
+          width: 2px;
+          background: red;
+
+        }
+      }
+  }
+}
