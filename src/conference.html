@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style-min.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container">
       <div class="header__contact">
         <a href="index.html">
           <div class="logo">
-              <img class="logo__img" src="img/logo.png" alt="Кафедра терапии  и семейной медицины">
-              <p class="logo__text">Кафедра терапии <br>и семейной медицины</p>
+            <img class="logo__img" src="img/logo.png" alt="Кафедра терапии  и семейной медицины">
+            <p class="logo__text">Кафедра терапии <br>и семейной медицины</p>
           </div>
         </a>
         <div class="header__user">
@@ -49,7 +51,7 @@
             <div class="slider__wrapper">
               <p class="slider__date  slider__date--inner">31 мая 2018 </p>
               <h1 class="slider__event  slider__event--inner">Всемирный день без табака. Табак и болезни сердца</h1>
-              <p class="slider__name  slider__name--inner">Краевая школа-семинар для врачей  общей практики</p>
+              <p class="slider__name  slider__name--inner">Краевая школа-семинар для врачей общей практики</p>
               <button class="btn-slider  btn-slider--inner" type="button">Подать заявку</button>
             </div>
           </div>
@@ -77,10 +79,10 @@
         </div>
         <div class="schedule__item">
           <p class="schedule__time  schedule__time--icon">12 :00 — 12 :45</p>
-          <img class="schedule__img"src="img/avatar3.jpg" width="70" height="70" alt="">
+          <img class="schedule__img" src="img/avatar3.jpg" width="70" height="70" alt="">
           <div class="schedule__inner-wrapp">
             <span class="schedule__name">Андрусенко Алёна Андреевна</span>
-            <p class="schedule__descr">Психологические аспекты никотиновой  зависимости</p>
+            <p class="schedule__descr">Психологические аспекты никотиновой зависимости</p>
           </div>
         </div>
         <div class="schedule__item">
@@ -111,9 +113,9 @@
       <h2 class="speaker__title">Спикеры</h2>
       <div class="speaker__wrapper">
         <div class="speaker__data">
-          <img src="img/speaker1.jpg" alt="" class="speaker__img">
+          <img class="speaker__img" src="img/speaker1.jpg" width="200" height="200" alt="">
           <p class="speaker__name">Ярослава Борисовна Ховаева</p>
-          <p class="speaker__job">Профессор,  Доктор медицинских наук</p>
+          <p class="speaker__job">Профессор, Доктор медицинских наук</p>
         </div>
         <div class="speaker__descr">
           <ul class="speaker__list">
@@ -129,20 +131,22 @@
     <section class="partners">
       <div class="partners__wrapper  container">
         <h2 class="partners__title">Партнеры конференции</h2>
-        <figure class="partners__item">
-            <img class="partners__img"src="img/partner1.png" width="240" height="180" alt="">
-            <figcaption>Генеральный спонсор конференции</figcaption>
-        </figure>
-        <figure class="partners__item">
-            <img class="partners__img"src="img/partner2.png" width="350" height="144" alt="">
-            <figcaption>Информационный партнер конференции</figcaption>
-        </figure>
+        <div class="partners__inner-wrapp">
+          <figure class="partners__item">
+            <img class="partners__img" src="img/partner1.png" width="240" height="180" alt="">
+            <figcaption class="partners__descr">Генеральный спонсор конференции</figcaption>
+          </figure>
+          <figure class="partners__item">
+            <img class="partners__img  partners__img--md-width" src="img/partner2.png" width="350" height="144" alt="">
+            <figcaption class="partners__descr">Информационный партнер конференции</figcaption>
+          </figure>
+        </div>
         <div class="partners__slider">
-          <img src="img/partner3.png" width="90" height="90" alt="">
-          <img src="img/partner4.png" width="247" height="41" alt="">
-          <img src="img/partner5.png" width="90" height="114" alt="">
-          <img src="img/partner6.png" width="280" height="106" alt="">
-          <img src="img/partner7.png" width="150" height="41" alt="">
+          <img class="partners__slider-img" src="img/partner3.png" width="90" height="90" alt="">
+          <img class="partners__slider-img" src="img/partner4.png" width="247" height="41" alt="">
+          <img class="partners__slider-img" src="img/partner5.png" width="90" height="114" alt="">
+          <img class="partners__slider-img  partners__slider-img--width" src="img/partner6.png" width="280" height="106" alt="">
+          <img class="partners__slider-img" src="img/partner7.png" width="150" height="41" alt="">
         </div>
       </div>
     </section>
@@ -157,8 +161,8 @@
             <input class="submit-form__input" type="email" placeholder="E-mail">
             <button class="submit-form__btn" type="submit" name="button">Отправить</button>
           </div>
-          <input class="submit-form__checkbox"type="checkbox" name="checkbox" value="checkbox" id="check">
-          <label for="check"> ДАЮ  СВОЁ СОГЛАСИЕ НА ОБРАБОТКУ МОИХ ПЕРСОНАЛЬНЫХ ДАННЫХ, ПОЛУЧЕНИЕ РАССЫЛОК, А ТАКЖЕ СОГЛАШАЮСЬ С ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</label>
+          <input class="submit-form__checkbox" type="checkbox" name="checkbox" value="checkbox" id="check">
+          <label class="submit-form__label" for="check"> ДАЮ  СВОЁ СОГЛАСИЕ НА ОБРАБОТКУ МОИХ ПЕРСОНАЛЬНЫХ ДАННЫХ, ПОЛУЧЕНИЕ РАССЫЛОК, А ТАКЖЕ СОГЛАШАЮСЬ С ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</label>
         </form>
       </div>
     </section>
@@ -167,15 +171,16 @@
   <script src="js/slick.js"></script>
   <script src="js/tabs.js"></script>
   <script>
-  $('.promo__slider').slick({
-    dots: true,
-    slickCurrentSlide: '.slickCurrentSlide',
-    prevArrow: '<button class="slick-prev slick-arrow--red" aria-label="Previous" type="button">Previous</button>',
-    nextArrow: '<button class="slick-next slick-arrow--red" aria-label="Next" type="button">Next</button>',
-  });
-  $(".promo__slider").on('afterChange', function(event, slick, currentSlide){
-     $(".promo__number--active").text(currentSlide + 1);
-  });
+    $('.promo__slider').slick({
+      dots: true,
+      slickCurrentSlide: '.slickCurrentSlide',
+      prevArrow: '<button class="slick-prev slick-arrow--red" aria-label="Previous" type="button">Previous</button>',
+      nextArrow: '<button class="slick-next slick-arrow--red" aria-label="Next" type="button">Next</button>',
+    });
+    $(".promo__slider").on('afterChange', function(event, slick, currentSlide) {
+      $(".promo__number--active").text(currentSlide + 1);
+    });
   </script>
 </body>
+
 </html>
