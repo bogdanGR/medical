@@ -3,6 +3,7 @@
   &__title {
     margin: 0;
     padding-top: 30px;
+    margin-bottom: 20px;
     color: $grey-text;
     font-size: 18px;
     line-height: 24px;
@@ -15,6 +16,9 @@
 
   &__inner-wrapp {
     position: relative;
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 35px;
 
     &::after {
       position: absolute;
@@ -27,6 +31,9 @@
       height: 34px;
       background: url("../../../img/medical-sprite.png");
       background-position: -200px -90px;
+    }
+    img {
+      border: 15px solid white;
     }
   }
 }
@@ -50,8 +57,8 @@
     &__inner-wrapp {
 
       &::after {
-        right: 10px;
-        bottom: 120px;
+        right: -22px;
+        bottom: 72px;
       }
     }
   }
@@ -59,16 +66,21 @@
 
 @media (min-width: 1440px) {
   .documents {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    
     &__inner-wrapp {
       display: flex;
+      width: 700px;
+      margin: 0 auto 0 100px;
       &::after {
         right: 120px;
-        bottom: 30px;
+        bottom: -6px;
       }
     }
     &__descr {
         align-self: flex-end;
-        //margin-left: 40px;
+        margin-left: 20px;
     }
   }
 }

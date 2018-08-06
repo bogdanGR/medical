@@ -18,7 +18,7 @@ var uglify = require("gulp-uglify");
 var del = require("del");
 
 gulp.task("style", function() {
-  gulp.src("src/sass/style.css")
+  gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([

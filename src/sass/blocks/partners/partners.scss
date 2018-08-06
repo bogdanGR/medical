@@ -52,9 +52,22 @@
       display: flex;
       flex-wrap: wrap;
       width: 600px;
+      margin-top: 30px;
     }
     &__slider-img {
-      margin: 10px 20px;
+      margin: 10px 28px;
+
+      &:last-child {
+        margin-left: 120px;
+        margin-top: 40px;
+      }
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .partners__slider {
+    flex-wrap: nowrap;
+    width: 1000px;
   }
 }

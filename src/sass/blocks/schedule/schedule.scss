@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 0 10px 13px;
+    margin: 10px 0 10px 20px;
     width: 280px;
     text-align: center;
     background: #fafafa;
@@ -40,7 +40,7 @@
       width: 24px;
       height: 24px;
       background-image: url("../../../img/medical-sprite.png");
-      background-position: -290px -160px;
+      background-position: -250px -160px;
     }
   }
 
@@ -63,7 +63,7 @@
     padding: 10px 10px 10px 55px;
     margin-bottom: 45px;
     width: 340px;
-    margin-left: 15px;
+    margin-left: 23px;
     text-decoration: none;
     color: $white;
     background: $active-color;
@@ -95,7 +95,7 @@
     }
     &__title {
       text-align: left;
-      margin-left: 25px;
+      margin-left: 35px;
     }
     &__inner-wrapp {
       display: flex;
@@ -138,6 +138,24 @@
       display: block;
       margin: 0 auto;
       padding-right: 0;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .schedule {
+    &__tile {
+    }
+    &__item {
+      width: 1000px;
+    }
+    &__inner-wrapp {
+        width: 600px;
+    }
+    &__time {
+      width: 200px;
+    }
+    &__descr {
+        width: 600px;
     }
   }
 }

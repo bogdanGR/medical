@@ -12,7 +12,7 @@
   }
   &__date {
     margin: 0;
-    margin-top: 80px;
+    margin-top: 71px;
     margin-bottom: 14px;
     width: 250px;
     font-size: 28px;
@@ -30,8 +30,9 @@
       margin-left: 20px;
     }
     &--width {
-      width: 120px;
+      width: 221px;
       padding: 10px;
+      margin-top: 61px;
     }
   }
   &__event {
@@ -88,12 +89,18 @@
       line-height: 26px;
     }
   }
+  &--conf {
+    background-image: url('../../../img/header-conf.jpg');
+    background-position: center -118px;
+    background-repeat: no-repeat;
+  }
+  &--schedule {
+    background-image: url('../../../img/header-schedule.jpg');
+    background-position: center -118px;
+    background-repeat: no-repeat;
+  }
 }
-.slider--inner {
-  background-image: url('../../../img/header-conf.jpg');
-  background-position: center -118px;
-  background-repeat: no-repeat;
-}
+
 @media (min-width: 768px) {
   .slider {
     &__wrapper {

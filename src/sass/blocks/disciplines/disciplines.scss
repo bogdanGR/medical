@@ -80,3 +80,17 @@
     }
   }
 }
+
+@media (min-width: 1280px) {
+  .disciplines {
+    &__item {
+      width: 1000px;
+    }
+    &__inner-wrapp {
+      width: 780px;
+    }
+    &__date {
+      width: 350px;
+    }
+  }
+}

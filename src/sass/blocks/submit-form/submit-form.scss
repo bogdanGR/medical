@@ -1,5 +1,6 @@
 .submit-form {
   background-color: #d1d9dd;
+  padding-bottom: 30px;
 
   &__wrapper {
     display: flex;
@@ -15,6 +16,7 @@
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid #dbdbdb;
+    outline: none;
 
     &:focus::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
