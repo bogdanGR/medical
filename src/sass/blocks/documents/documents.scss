@@ -29,7 +29,7 @@
 
       width: 35px;
       height: 34px;
-      background: url("../../../img/medical-sprite.png");
+      background: url("../img/medical-sprite.png");
       background-position: -200px -90px;
     }
     img {
@@ -68,7 +68,7 @@
   .documents {
     padding-top: 30px;
     padding-bottom: 120px;
-    
+
     &__inner-wrapp {
       display: flex;
       width: 700px;
