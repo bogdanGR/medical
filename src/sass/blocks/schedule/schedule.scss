@@ -96,6 +96,8 @@
     &__title {
       text-align: left;
       margin-left: 35px;
+      font-size: 28px;
+      line-height: 32px;
     }
     &__inner-wrapp {
       display: flex;
@@ -143,7 +145,8 @@
 }
 @media (min-width: 1280px) {
   .schedule {
-    &__tile {
+    &__title {
+      margin-left: 68px;
     }
     &__item {
       width: 1000px;

@@ -15,6 +15,7 @@
 
   &__title {
     display: block;
+    text-transform: uppercase;
     margin-bottom: 5px;
     color: #f82649;
   }
@@ -115,6 +116,9 @@
     &__text {
       width: 600px;
       margin-right: 20px;
+      padding-top: 90px;
+      font-size: 15px;
+      line-height: 25px;
     }
     &__items {
       width: 400px;
@@ -122,5 +126,11 @@
     &__item {
       margin-left: 60px;
     }
+    &__inner-wrapper {
+      &::after {
+        left: -138px;
+      }
+    }
   }
+
 }

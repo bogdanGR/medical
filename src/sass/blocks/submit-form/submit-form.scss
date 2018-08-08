@@ -137,7 +137,9 @@
     &__wrapper {
       width: 650px;
     }
-
+    &__title {
+      text-align: left;
+    }
     &__input {
       display: block;
       width: 220px;
