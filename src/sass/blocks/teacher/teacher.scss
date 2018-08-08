@@ -1,4 +1,5 @@
 .teacher {
+  margin-bottom: 70px;
   &__wrapper {
     width: 280px;
     margin: 0 auto;
@@ -68,11 +69,22 @@
       font-size: 30px;
     }
   }
+  &-arrow {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__prev-arrow {
+    display: none;
+  }
+  &__next-arrow {
+    display: none;
+  }
 }
 
 @media(min-width: 768px) {
   .teacher {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     &__title {
       text-align: left;
       margin-left: 25px;
@@ -104,13 +116,40 @@
     &__img {
       padding-right: 40px;
     }
+    &__number {
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    color: $grey-text;
+    font-size: 30px;
+    &--active {
+      color: $active-color;
+      }
+    }
+    &__prev-arrow {
+      display: none;
+    }
+    &__next-arrow {
+      display: none;
+    }
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1140px) {
   .teacher {
     &__wrapper {
-      width: 1000px;
+      width: 1140px;
+    }
+    &__prev-arrow {
+      position: relative;
+      margin-right: 30px;
+      top: 40px;
+      right: 0;
+    }
+    &__next-arrow {
+      position: relative;
+      top: 40px;
+      right: 20px;
     }
   }
 }
