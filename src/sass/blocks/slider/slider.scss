@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
   }
   &-1 {
     background-image: url('../img/slide-bg1-index.jpg');
@@ -97,6 +98,7 @@
     height: 519px;
   }
   &--schedule {
+    height: 520px;
     background-image: url('../img/header-schedule.jpg');
     background-position: center -118px;
     background-repeat: no-repeat;
@@ -107,7 +109,7 @@
 @media (min-width: 768px) {
   .slider {
     &__wrapper {
-      display: block;
+      display: inline-block;
     }
     &__date--inner {
       font-size: 18px;
