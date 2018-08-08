@@ -111,21 +111,60 @@
     </section>
     <section class="speaker  container">
       <h2 class="speaker__title">Спикеры</h2>
-      <div class="speaker__wrapper">
-        <div class="speaker__data">
-          <img class="speaker__img" src="img/speaker1.jpg" width="200" height="200" alt="">
-          <p class="speaker__name">Ярослава Борисовна Ховаева</p>
-          <p class="speaker__job">Профессор, Доктор медицинских наук</p>
+      <div class="speaker__slider-wrapper">
+        <div class="speaker__wrapper">
+          <div class="speaker__data">
+            <img class="speaker__img" src="img/speaker1.jpg" width="200" height="200" alt="">
+            <p class="speaker__name">Ярослава Борисовна Ховаева</p>
+            <p class="speaker__job">Профессор, Доктор медицинских наук</p>
+          </div>
+          <div class="speaker__descr">
+            <ul class="speaker__list">
+              <li class="speaker__item">Завкафедрой терапии и семейной медицины факультета дополнительного профессионального образования</li>
+              <li class="speaker__item">Декан факультета дополнительного профессионального образования</li>
+              <li class="speaker__item">Научно-педагогический стаж: 23 года</li>
+              <li class="speaker__item">Опубликовала 332 научные работы</li>
+              <li class="speaker__item">Профессиональные интересы: кардиология, функциональная диагностика, коморбидность в клинике внутренних болезней, профилактика заболеваний, рациональная лекарственная терапия</li>
+            </ul>
+          </div>
         </div>
-        <div class="speaker__descr">
-          <ul class="speaker__list">
-            <li class="speaker__item">Завкафедрой терапии и семейной медицины факультета дополнительного профессионального образования</li>
-            <li class="speaker__item">Декан факультета дополнительного профессионального образования</li>
-            <li class="speaker__item">Научно-педагогический стаж: 23 года</li>
-            <li class="speaker__item">Опубликовала 332 научные работы</li>
-            <li class="speaker__item">Профессиональные интересы: кардиология, функциональная диагностика, коморбидность в клинике внутренних болезней, профилактика заболеваний, рациональная лекарственная терапия</li>
-          </ul>
+
+        <div class="speaker__wrapper">
+          <div class="speaker__data">
+            <img class="speaker__img" src="img/speaker1.jpg" width="200" height="200" alt="">
+            <p class="speaker__name">Ярослава Борисовна Ховаева</p>
+            <p class="speaker__job">Профессор, Доктор медицинских наук</p>
+          </div>
+          <div class="speaker__descr">
+            <ul class="speaker__list">
+              <li class="speaker__item">Завкафедрой терапии и семейной медицины факультета дополнительного профессионального образования</li>
+              <li class="speaker__item">Декан факультета дополнительного профессионального образования</li>
+              <li class="speaker__item">Научно-педагогический стаж: 23 года</li>
+              <li class="speaker__item">Опубликовала 332 научные работы</li>
+              <li class="speaker__item">Профессиональные интересы: кардиология, функциональная диагностика, коморбидность в клинике внутренних болезней, профилактика заболеваний, рациональная лекарственная терапия</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="speaker__wrapper">
+          <div class="speaker__data">
+            <img class="speaker__img" src="img/speaker1.jpg" width="200" height="200" alt="">
+            <p class="speaker__name">Ярослава Борисовна Ховаева</p>
+            <p class="speaker__job">Профессор, Доктор медицинских наук</p>
+          </div>
+          <div class="speaker__descr">
+            <ul class="speaker__list">
+              <li class="speaker__item">Завкафедрой терапии и семейной медицины факультета дополнительного профессионального образования</li>
+              <li class="speaker__item">Декан факультета дополнительного профессионального образования</li>
+              <li class="speaker__item">Научно-педагогический стаж: 23 года</li>
+              <li class="speaker__item">Опубликовала 332 научные работы</li>
+              <li class="speaker__item">Профессиональные интересы: кардиология, функциональная диагностика, коморбидность в клинике внутренних болезней, профилактика заболеваний, рациональная лекарственная терапия</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container speaker-arrow">
+        <div class="speaker__number"><span class="speaker__number--active">1</span>|3</div>
       </div>
     </section>
     <section class="partners">
@@ -171,15 +210,30 @@
   <script src="js/slick.js"></script>
   <script src="js/tabs.js"></script>
   <script>
-    $('.promo__slider').slick({
-      dots: true,
-      slickCurrentSlide: '.slickCurrentSlide',
-      prevArrow: '<button class="slick-prev slick-arrow--red" aria-label="Previous" type="button">Previous</button>',
-      nextArrow: '<button class="slick-next slick-arrow--red" aria-label="Next" type="button">Next</button>',
-    });
-    $(".promo__slider").on('afterChange', function(event, slick, currentSlide) {
-      $(".promo__number--active").text(currentSlide + 1);
-    });
+  $('.speaker__slider-wrapper').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  mobileFirst: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<button class="slick-prev slick-arrow--red speaker__prev-arrow" aria-label="Previous" type="button">Previous</button>',
+  nextArrow: '<button class="slick-next slick-arrow--red speaker__next-arrow" aria-label="Next" type="button">Next</button>',
+  appendArrows: '.speaker-arrow',
+  responsive: [
+    {
+      breakpoint: 1140,
+      settings: {
+        prevArrow: true,
+        nextArrow: true,
+      }
+    },
+  ]
+});
+$(".speaker__slider-wrapper").on('afterChange', function(event, slick, currentSlide){
+  console.log(currentSlide)
+   $(".speaker__number--active").text(currentSlide + 1);
+});
   </script>
 </body>
 
