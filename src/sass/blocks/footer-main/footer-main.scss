@@ -21,19 +21,19 @@
       content: '';
       width: 42px;
       height: 36px;
-      right: 25px;
+      right: 5px;
       top: 16px;
-      background-image: url('../../../img/medical-sprite.png');
+      background-image: url('../img/medical-sprite.png');
       background-position: -255px -104px;
     }
   }
   &__email {
     position: relative;
     box-sizing: border-box;
-    width: 100%;
+    width: 320px;
     height: 75px;
     padding-left: 25px;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 500;
     color: $footer-input-email;
     background: transparent;
@@ -68,10 +68,16 @@
   .footer-main {
     &__email {
       width: 670px;
+      font-size: 20px;
     }
     padding-top: 30px;
     &__phone {
       margin-top: 20px;
+    }
+    &__email-wrapper {
+      &::before {
+        right: 25px;
+      }
     }
   }
 }
