@@ -39,10 +39,24 @@
   &__content {
     display: none;
     margin-top: 50px;
+    justify-content: space-around;
     &.active-tab {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      opacity: 1;
+      transition: 1s;
+    }
+  }
+  &__add {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    p {
+      margin-right: 45px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $bg-date;
+      text-transform: uppercase;
     }
   }
 }
@@ -57,13 +71,16 @@
     height: 30px;
     top: 11px;
     right: 19px;
-    background-image: url('../img/search.png');
+    background-image: url('../../../img/search.png');
   }
 }
 
 @media (min-width: 768px) {
   .education-program {
     padding-top: 76px;
+    &__content {
+      justify-content: space-around;
+    }
     &__wrapper {
       p {
         width: 560px;
@@ -112,6 +129,9 @@
 @media (min-width: 1140px) {
   .education-program {
     position: relative;
+    &__content {
+      justify-content: space-between;
+    }
     &__wrapper {
       flex-direction: row;
       justify-content: space-between;
