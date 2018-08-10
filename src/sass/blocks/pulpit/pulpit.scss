@@ -1,6 +1,6 @@
 .pulpit {
   padding-top: 40px;
-  background-image: url('../../../img/index-content-bg.jpg');
+  background-image: url('../img/index-content-bg.jpg');
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,19 +63,19 @@
     }
     &--programm {
       &::after {
-        background-image: url('../../../img/medical-sprite.png');
+        background-image: url('../img/medical-sprite.png');
         background-position: -255px -10px;
       }
     }
     &--students {
       &::after {
-        background-image: url('../../../img/medical-sprite.png');
+        background-image: url('../img/medical-sprite.png');
         background-position: -106px -90px;
       }
     }
     &--professor {
       &::after {
-        background-image: url('../../../img/medical-sprite.png');
+        background-image: url('../img/medical-sprite.png');
         background-position: -10px -176px;
       }
     }
@@ -117,7 +117,7 @@
       height: 46px;
       top: 16px;
       left: -31px;
-      background-image: url('../../../img/medical-sprite.png');
+      background-image: url('../img/medical-sprite.png');
       background-position: -160px -182px;
     }
   }
