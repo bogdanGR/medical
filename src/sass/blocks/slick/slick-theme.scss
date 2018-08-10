@@ -78,11 +78,12 @@ $slick-opacity-not-active: 0.25 !default;
     border: none;
     outline: none;
     border-radius: 50%;
+    transition: 0.3s;
     &:hover{
         outline: none;
         background: $active-color;
         color: transparent;
-        transition: 0.5s;
+        transition: 0.3s;
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -100,7 +101,7 @@ $slick-opacity-not-active: 0.25 !default;
         right: -25px;
     }
     &:before {
-        content: $slick-prev-character;
+        content: '<';
         [dir="rtl"] & {
             content: $slick-next-character;
         }

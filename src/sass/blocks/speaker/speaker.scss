@@ -26,23 +26,18 @@
     position: relative;
     font-size: 22px;
     line-height: 24px;
+    font-weight: 900;
     text-align: center;
     color: $grey-text;
     margin-bottom: 40px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      left: 20px;
-      top: 60px;
-
-      width: 240px;
-      height: 2px;
-      background: #d6dce1;;
-    }
+    padding-bottom: 30px;
+    border-bottom: 2px solid #d6dce1;
   }
   &__job {
     text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
     color: #f82649;
     font-weight: 700;
   }
@@ -57,7 +52,7 @@
   &__item {
     padding: 5px 0;
     position: relative;
-
+    color: $grey-text;
     &::before {
       position: absolute;
       content: "•";
@@ -95,17 +90,20 @@
 @media(min-width: 768px) {
   .speaker {
     margin-bottom: 70px;
+    &__name {
+      font-size: 30px;
+      font-weight: 900;
+    }
     &__title {
       text-align: left;
-      margin-left: 25px;
+      margin-left: 32px;
       font-size: 28px;
       line-height: 32px;
     }
     &__name {
-      &::after {
-        width: 265px;
-        left: 10px;
-      }
+      width: 345px;
+      margin: 0 auto;
+      margin-top: 40px;
     }
     &__wrapper {
       display: flex;
@@ -115,8 +113,9 @@
     }
 
     &__item {
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
       padding: 10px 0;
 
       &::before {
@@ -124,7 +123,9 @@
       }
     }
     &__img {
-      padding-right: 40px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding: 0
     }
     &__prev-arrow {
       display: none;
@@ -136,6 +137,15 @@
 }
 @media (min-width: 1140px) {
   .speaker {
+    &__item {
+      line-height: 40px;
+    }
+    &__data {
+      width: 415px;
+    }
+    &__descr {
+      width: 685px;
+    }
     &__wrapper {
       width: 1140px;
     }
@@ -151,7 +161,11 @@
       right: 20px;
     }
     &__title {
-      margin-left: 68px;
+      font-size: 46px;
+      font-weight: 500;
+      padding-top: 80px;
+      margin-bottom: 40px;
+      margin-left: 0;
     }
   }
 }

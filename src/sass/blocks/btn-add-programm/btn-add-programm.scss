@@ -4,11 +4,14 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #000;
   background: $bg-date;
   outline: none;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    background: #477ae5;
+  }
   &::after {
     position: absolute;
     display: block;

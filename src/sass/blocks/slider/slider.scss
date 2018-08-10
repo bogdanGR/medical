@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   &-1 {
     background-image: url('../img/slide-bg1-index.jpg');
@@ -21,6 +22,7 @@
     color: #4f87fb;
 
     &--inner {
+      margin: 0;
       font-size: 18px;
       line-height: 24px;
       text-align: center;
@@ -52,6 +54,7 @@
     text-transform: uppercase;
 
     &--inner {
+      margin-top: 20px;
       font-size: 18px;
       line-height: 24px;
       background: transparent;
@@ -78,7 +81,8 @@
     text-transform: uppercase;
 
     &--inner {
-      margin-bottom: 0;
+      margin-bottom: 20px;
+      margin-top: 20px;
       margin-left: 20px;
       width: 250px;
       font-size: 16px;
@@ -116,13 +120,16 @@
       font-size: 18px;
     }
     &__event--inner {
+      text-align: left;
       font-size: 36px;
       width: 500px;
       line-height: 42px;
       margin-bottom: 10px;
-      padding-top: 20px;
+      padding-top: 40px;
     }
     &__name--inner {
+      margin-bottom: 0;
+      text-align: left;
       font-size: 22px;
       width: 400px;
       margin-bottom: 100px;
@@ -138,4 +145,29 @@
     }
   }
 
+}
+
+@media (min-width: 1140px) {
+  .slider {
+    &__event--inner {
+      margin-left: 0;
+      padding-top: 65px;
+      margin-top: 0;
+      width: 700px;
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    &__name--inner {
+      margin-top: 0;
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: 400;
+      width: 700px;
+      margin-bottom: 60px;
+      padding-top: 30px;
+      margin-left: 0;
+    }
+  }
 }

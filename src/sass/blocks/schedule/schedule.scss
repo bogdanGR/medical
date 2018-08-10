@@ -2,7 +2,6 @@
   margin-bottom: 50px;
   padding-bottom: 40px;
   background-color: #f4f4f4;
-
   &__title {
     margin: 0;
     padding-top: 30px;
@@ -20,11 +19,13 @@
     width: 280px;
     text-align: center;
     background: #fafafa;
-    box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
 
     &--last {
-      opacity: 0.2;
+      opacity: 0.3;
+      background: radial-gradient(ellipse at center, #f3f3f3, #fafafa);
       margin-bottom: 40px;
+      box-shadow: none;
     }
   }
 
@@ -50,11 +51,10 @@
 
   &__descr {
     color: $grey-text;
-    padding: 0 5px;
   }
 
   &__img {
-    margin: 0 auto 5px;
+    margin: 15px auto 5px;
   }
 
   &__link {
@@ -95,6 +95,7 @@
     }
     &__title {
       text-align: left;
+      margin-bottom: 20px;
       margin-left: 35px;
       font-size: 28px;
       line-height: 32px;
@@ -102,6 +103,7 @@
     &__inner-wrapp {
       display: flex;
       flex-direction: column;
+      align-self: center;
     }
 
     &__time {
@@ -126,39 +128,74 @@
     }
 
     &__name {
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: 400;
       text-align: left;
     }
 
     &__descr {
+      margin: 0;
       width: 400px;
       text-align: left;
+      font-size: 30px;
+      line-height: 32px;
+      font-weight: 400;
     }
 
     &__link {
+      text-align: center;
+      box-sizing: border-box;
       position: relative;
-      width: 280px;
+      width: 380px;
       display: block;
       margin: 0 auto;
-      padding-right: 0;
+      padding: 20px 0;
+      font-size: 18px;
+      font-weight: 700;
+      &::after {
+        top: 21px;
+      }
     }
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1140px) {
   .schedule {
     &__title {
-      margin-left: 68px;
+      padding-top: 130px;
+      font-size: 46px;
+      line-height: 30px;
+      font-weight: 500;
+      margin-left: 0px;
+      margin-bottom: 40px;
     }
     &__item {
-      width: 1000px;
+      width: 100%;
     }
     &__inner-wrapp {
         width: 600px;
     }
     &__time {
-      width: 200px;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+      width: 300px;
+      span {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+      }
+      &::before {
+        top: 6px;
+        left: 20px;
+      }
     }
     &__descr {
-        width: 600px;
+      width: 600px;
+      padding-left: 0;
+      &--small {
+        font-size: 24px;
+      }
     }
   }
 }

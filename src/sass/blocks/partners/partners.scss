@@ -4,22 +4,29 @@
 
   &__title {
     margin: 0;
+    text-align: center;
     padding-top: 30px;
     color: $grey-text;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
+    font-size: 36px;
+    line-height: 70px;
+    font-weight: 500;
   }
   &__descr {
+    text-align: center;
     padding-top: 10px;
     color: #585868;
+    border-top: 2px solid $bg-line;
   }
   &__img {
     width: 240px;
   }
   &__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 240px;
     margin: 0 auto;
+    border-bottom: 2px solid $bg-line;
   }
   &__slider-img {
     margin: 10px 0;
@@ -34,12 +41,8 @@
   .partners {
 
     &__title {
-      font-size: 24px;
-      text-align: left;
-      margin-left: 40px;
+      text-align: center;
       margin-bottom: 40px;
-      font-size: 28px;
-      line-height: 32px;
     }
     &__inner-wrapp {
       display: flex;
@@ -54,23 +57,23 @@
     &__slider {
       display: flex;
       flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       width: 600px;
       margin-top: 30px;
-    }
-    &__slider-img {
-      margin: 10px 28px;
-
-      &:last-child {
-        margin-left: 120px;
-        margin-top: 40px;
-      }
     }
   }
 }
 
 @media (min-width: 1280px) {
+  .partners {
+    &__title {
+      text-align: left;
+    }
+  }
   .partners__slider {
     flex-wrap: nowrap;
-    width: 1000px;
+    width: 100%;
   }
 }

@@ -10,11 +10,14 @@
   text-transform: uppercase;
   outline: none;
   border-radius: 5px;
+  background: $bg-tab;
+  transition: 0.5s;
   cursor: pointer;
   &:hover {
     background: $active-color;
     color: $white;
-    transition: 0.3s;
+    transition: 0.5s;
+    border: 2px solid $active-color;
   }
   &:active {
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);

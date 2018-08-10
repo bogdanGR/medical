@@ -1,8 +1,10 @@
 .description {
   &__text {
+    text-align: center;
     padding: 0 20px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
+    color: $grey-text;
   }
 
   &__inner-wrapper {
@@ -11,6 +13,7 @@
     margin: 0 auto 5px 80px;
     font-size: 14px;
     line-height: 22px;
+    color: $grey-text;
   }
 
   &__title {
@@ -56,6 +59,9 @@
   .description {
     &__title {
       display: block;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 400;
     }
 
     &__wrapper {
@@ -65,10 +71,12 @@
     }
 
     &__text {
+      text-align: left;
       width: 500px;
       padding-top: 50px;
-      font-size: 14px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 400;
     }
 
     &__items {
@@ -89,8 +97,13 @@
     }
     &__inner-wrapper {
       position: relative;
-
-
+      width: 230px;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 400;
+      &--small {
+        font-size: 20px;
+      }
       &::after {
         position: absolute;
         content: "";
@@ -108,17 +121,17 @@
 
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1140px) {
   .description {
     &__wrapper {
-      width: 1000px;
+      width: 100%;
+      justify-content: space-between;
     }
     &__text {
-      width: 600px;
-      margin-right: 20px;
+      width: 700px;
+      margin: 0;
+      padding: 0;
       padding-top: 90px;
-      font-size: 15px;
-      line-height: 25px;
     }
     &__items {
       width: 400px;
